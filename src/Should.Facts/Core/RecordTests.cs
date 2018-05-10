@@ -11,7 +11,7 @@ namespace Should.Facts.Core
             [Fact]
             public void Exception()
             {
-                Exception ex = Record.Exception(delegate { throw new InvalidOperationException(); });
+                Exception ex = Record.Exception((Action)delegate { throw new InvalidOperationException(); });
 
                 Assert.NotNull(ex);
                 Assert.IsType<InvalidOperationException>(ex);
