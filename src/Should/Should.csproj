@@ -1,11 +1,40 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <PackageId>Should-DotNetStandard</PackageId>
+    <Version>1.0.0-alpha05</Version>
+    <Authors>Eric Hexter, Tim Scott, Matt Honeycutt</Authors>
+
+    <PackageLicenseUrl>https://github.com/MattHoneycutt/SpecsFor/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/MattHoneycutt/Should/blob/master/license.txt</PackageProjectUrl>
+    <Description>
+      Now with .NET Standard support!
+      The Should Assertion Library provides a set of extension methods for test assertions for AAA and BDD style tests. It provides assertions only, and as a result it is test runner agnostic.  The assertions are a direct fork of the xUnit test assertions.  This project was born because test runners Should be independent of the assertions!
+    </Description>
+    <PackageReleaseNotes>
+      First version that targets .NET Standard!
+    </PackageReleaseNotes>
+    <Copyright>Copyright 2018</Copyright>
+    <PackageTags>TDD;Testing;BDD;Test Driven Development;NET Core;Should</PackageTags>
+  </PropertyGroup>
+  
+  <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);IncludeP2PAssets</TargetsForTfmSpecificBuildOutput>
+  </PropertyGroup>
+  
   <ItemGroup>
-    <ProjectReference Include="..\Should.Core\Should.Core.csproj" />
+    <ProjectReference Include="..\Should.Core\Should.Core.csproj" PrivateAssets="all" />
   </ItemGroup>
 
+  <Target Name="IncludeP2PAssets">
+    <ItemGroup>
+      <BuildOutputInPackage Include="$(OutputPath)Should.Core.dll" />
+    </ItemGroup>
+  </Target>
+ 
+  
 </Project>

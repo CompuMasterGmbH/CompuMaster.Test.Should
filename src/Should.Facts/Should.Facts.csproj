@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Should.Core\Should.Core.csproj" />
     <ProjectReference Include="..\Should\Should.csproj" />
   </ItemGroup>
 
