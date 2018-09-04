@@ -2,11 +2,10 @@
 
   <PropertyGroup>
     <PackageId>Should-DotNetStandard</PackageId>
-    <Version>1.0.0-beta01</Version>
+    <Version>1.0.0</Version>
     <Authors>Eric Hexter, Tim Scott, Matt Honeycutt</Authors>
 
-    <PackageLicenseUrl>https://github.com/MattHoneycutt/SpecsFor/blob/master/LICENSE.md</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/MattHoneycutt/Should/blob/master/license.txt</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/MattHoneycutt/Should/blob/master/license.txt</PackageLicenseUrl>
     <Description>
       Now with .NET Standard support!
       The Should Assertion Library provides a set of extension methods for test assertions for AAA and BDD style tests. It provides assertions only, and as a result it is test runner agnostic.  The assertions are a direct fork of the xUnit test assertions.  This project was born because test runners Should be independent of the assertions!
