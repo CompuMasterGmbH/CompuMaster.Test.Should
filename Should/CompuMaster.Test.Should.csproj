@@ -6,19 +6,19 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageProjectUrl>https://github.com/CompuMasterGmbH/CompuMaster.Test.Should</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>2.0.0</Version>
+    <Version>2.0.0-rc</Version>
     <Authors>Eric Hexter, Tim Scott, Matt Honeycutt, Jochen Wezel</Authors>
-    <PackageLicenseUrl>https://github.com/MattHoneycutt/Should/blob/master/license.txt</PackageLicenseUrl>
     <Description>
-      Should and Should.Fluent now with .NET Standard support!
+      Should and Should.Fluent now with .NET Standard support and in a combined assembly!
       The Should Assertion Library provides a set of extension methods for test assertions for AAA and BDD style tests. It provides assertions only, and as a result it is test runner agnostic.  The assertions are a direct fork of the xUnit test assertions.  This project was born because test runners Should be independent of the assertions!
     </Description>
     <PackageReleaseNotes>
-      First version that targets .NET Standard and consolitdates Should and Should.Fluent to cover all implemented namespaces!
+      First version that targets .NET Standard and consolidates Should and Should.Fluent into a single assembly to cover all implemented namespaces!
     </PackageReleaseNotes>
     <Copyright>Copyright 2018,2024</Copyright>
-    <PackageTags>TDD;Testing;BDD;Test Driven Development;NET Core;Should;Should.Fluent</PackageTags>
+    <PackageTags>TDD;Testing;BDD;Test Driven Development;NET Core;Should;Should.Fluent;Should-DotNetStandard</PackageTags>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageIcon>logo_64x64.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -38,6 +38,10 @@
 
   <ItemGroup>
     <None Include="..\license.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\logo_64x64.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
