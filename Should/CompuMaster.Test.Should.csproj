@@ -18,6 +18,7 @@
     </PackageReleaseNotes>
     <Copyright>Copyright 2018,2024</Copyright>
     <PackageTags>TDD;Testing;BDD;Test Driven Development;NET Core;Should;Should.Fluent</PackageTags>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
