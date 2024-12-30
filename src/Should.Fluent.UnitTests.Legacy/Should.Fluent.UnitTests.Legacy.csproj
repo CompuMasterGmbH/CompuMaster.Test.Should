@@ -60,42 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BeBoolSpecs.cs" />
-    <Compile Include="BeDateTimeSpecs.cs" />
-    <Compile Include="BeDoubleSpecs.cs" />
-    <Compile Include="BeEnumerableSpecs.cs" />
-    <Compile Include="ExtensilbitySpecs.cs" />
-    <Compile Include="IntegrationTests\TestBase.cs" />
-    <Compile Include="IntegrationTests\LessThanSpecs.cs" />
-    <Compile Include="IntegrationTests\GreaterThanSpecs.cs" />
-    <Compile Include="BeGuidSpecs.cs" />
-    <Compile Include="BeMethodCallExpressionSpecs.cs" />
-    <Compile Include="BeNullableBoolSpecs.cs" />
-    <Compile Include="BeNullableDateTimeSpecs.cs" />
-    <Compile Include="BeStringSpecs.cs" />
-    <Compile Include="BeSpecs.cs" />
-    <Compile Include="ShouldDateTimeSpecs.cs" />
-    <Compile Include="result_should_be_target.cs" />
-    <Compile Include="ShouldCoreProviderSpecs.cs" />
-    <Compile Include="ShouldDoubleSpecs.cs" />
-    <Compile Include="TestBase.cs" />
-    <Compile Include="ContainsSpecs.cs" />
-    <Compile Include="CountSpecs.cs" />
-    <Compile Include="ShouldExtensionsSpecs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShouldDictionarySpecs.cs" />
-    <Compile Include="ShouldSpecs.cs" />
-    <Compile Include="Behaviors.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Should.Core.Legacy\Should.Core.Legacy.csproj">
-      <Project>{984764C1-D102-43AD-8DE9-0AA3B7E5D431}</Project>
-      <Name>Should.Core.Legacy</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Should.Fluent.Legacy\Should.Fluent.Legacy.csproj">
-      <Project>{20743DBF-AEF5-464B-9C9B-8109AD43AA5A}</Project>
-      <Name>Should.Fluent.Legacy</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

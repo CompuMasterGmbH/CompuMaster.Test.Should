@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{724F85B0-4E93-46D4-AD51-D04C54139498}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompuMaster.Test.Should", "Should\CompuMaster.Test.Should.csproj", "{BE9500D9-B6B7-433B-9B62-20FD630EA8CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Should.Facts", "Should.Facts\Should.Facts.csproj", "{F20F1EA8-E7A7-4C27-BAC4-CE25C1BAA412}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE9500D9-B6B7-433B-9B62-20FD630EA8CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE9500D9-B6B7-433B-9B62-20FD630EA8CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE9500D9-B6B7-433B-9B62-20FD630EA8CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE9500D9-B6B7-433B-9B62-20FD630EA8CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F20F1EA8-E7A7-4C27-BAC4-CE25C1BAA412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F20F1EA8-E7A7-4C27-BAC4-CE25C1BAA412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F20F1EA8-E7A7-4C27-BAC4-CE25C1BAA412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F20F1EA8-E7A7-4C27-BAC4-CE25C1BAA412}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F20F1EA8-E7A7-4C27-BAC4-CE25C1BAA412} = {724F85B0-4E93-46D4-AD51-D04C54139498}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0D35375-1391-4D42-9251-72DD116D518A}
+	EndGlobalSection
+EndGlobal

@@ -63,52 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DateAssertionExtension_Facts.cs" />
-    <Compile Include="ActionAssertionExtension_Facts.cs" />
-    <Compile Include="Core\AssertActualExpectedExceptionTests.cs" />
-    <Compile Include="Core\ComparisonTests.cs" />
-    <Compile Include="Core\AssertExceptionTests.cs" />
-    <Compile Include="Core\ContainsTests.cs" />
-    <Compile Include="Core\DoesNotContainTests.cs" />
-    <Compile Include="Core\DoesNotThrowTests.cs" />
-    <Compile Include="Core\EmptyTests.cs" />
-    <Compile Include="Core\GreaterThanOrEqualTests.cs" />
-    <Compile Include="DoubleAssertionExtension_Facts.cs" />
-    <Compile Include="Core\GreaterThanTests.cs" />
-    <Compile Include="Core\LessThanOrEqualTests.cs" />
-    <Compile Include="Core\LessThanTests.cs" />
-    <Compile Include="EqualTests.cs" />
-    <Compile Include="ObjectAssertionExtension_Facts.cs" />
-    <Compile Include="StringAssertionExtensions_Facts.cs" />
-    <Compile Include="Core\FalseTests.cs" />
-    <Compile Include="Core\InRangeTests.cs" />
-    <Compile Include="Core\IsAssignableFromTests.cs" />
-    <Compile Include="Core\IsNotTypeTests.cs" />
-    <Compile Include="Core\IsTypeTests.cs" />
-    <Compile Include="Core\NotEmptyTests.cs" />
-    <Compile Include="Core\NotEqualTests.cs" />
-    <Compile Include="Core\NotInRangeTests.cs" />
-    <Compile Include="Core\NotNullTests.cs" />
-    <Compile Include="Core\NotSameTests.cs" />
-    <Compile Include="Core\NullTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Core\RecordTests.cs" />
-    <Compile Include="Core\SameTests.cs" />
-    <Compile Include="Core\SerializationTests.cs" />
-    <Compile Include="Core\SingleFacts.cs" />
-    <Compile Include="ThrowsTests.cs" />
-    <Compile Include="TraceAssertTests.cs" />
-    <Compile Include="Core\TrueTests.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Should.Core.Legacy\Should.Core.Legacy.csproj">
-      <Project>{984764C1-D102-43AD-8DE9-0AA3B7E5D431}</Project>
-      <Name>Should.Core.Legacy</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Should.Legacy\Should.Legacy.csproj">
-      <Project>{5606A23D-EBDA-4563-B303-F19CEFE9EC32}</Project>
-      <Name>Should.Legacy</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
