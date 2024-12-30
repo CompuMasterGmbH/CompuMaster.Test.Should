@@ -48,7 +48,7 @@ namespace Should.Facts.Core
                     () => Assert.Equal(new [] { null, "hello" }, new [] { null, "world" }));
 
                 Assert.IsType<EqualException>(ex);
-                Assert.Equal("Assert.Equal() Failure\r\nPosition: First difference is at position 1\r\nExpected: System.String[] { (null), hello }\r\nActual:   System.String[] { (null), world }", ex.Message);
+                Assert.Equal("Assert.Equal() Failure\r\nPosition: First difference is at position 1\r\nExpected: System.String[] { (null), hello }\r\nActual:   System.String[] { (null), world }".Replace("\r\n", Environment.NewLine), ex.Message);
             }
         }
 

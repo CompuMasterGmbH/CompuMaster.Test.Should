@@ -1,4 +1,5 @@
 ﻿using Should.Core.Exceptions;
+using System;
 using Xunit;
 
 namespace Should.Facts
@@ -33,7 +34,7 @@ namespace Should.Facts
                 d.ShouldEqual(2.0, 0, "custom failure message");
             });
 
-            Assert.Equal("custom failure message\r\nExpected: 2 +/- 0\r\nActual:   1", ex.Message);
+            Assert.Equal("custom failure message\r\nExpected: 2 +/- 0\r\nActual:   1".Replace("\r\n", Environment.NewLine), ex.Message);
         }
 
         [Fact]

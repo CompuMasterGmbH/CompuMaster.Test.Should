@@ -50,7 +50,7 @@ namespace Should.Facts
                 s.ShouldEqual("bar", "custom failure message");
             });
 
-            Assert.Equal("custom failure message\r\nPosition: First difference is at position 0\r\nExpected: bar\r\nActual:   foo", ex.Message);
+            Assert.Equal("custom failure message\r\nPosition: First difference is at position 0\r\nExpected: bar\r\nActual:   foo".Replace("\r\n", Environment.NewLine), ex.Message);
         }
 
         [Fact]
@@ -63,7 +63,7 @@ namespace Should.Facts
                 s.ShouldImplement<IList>("custom failure message");
             });
 
-            Assert.Equal("custom failure message\r\nExpected: System.Collections.IList\r\nActual:   System.String", ex.Message);
+            Assert.Equal("custom failure message\r\nExpected: System.Collections.IList\r\nActual:   System.String".Replace("\r\n", Environment.NewLine), ex.Message);
         }
     }
 }
