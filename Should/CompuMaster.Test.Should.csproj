@@ -2,9 +2,12 @@
 
   <PropertyGroup>
     <PackageId>CompuMaster.Test.Should</PackageId>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageProjectUrl>https://github.com/CompuMasterGmbH/CompuMaster.Test.Should</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Version>2.0.0</Version>
     <Authors>Eric Hexter, Tim Scott, Matt Honeycutt, Jochen Wezel</Authors>
-
     <PackageLicenseUrl>https://github.com/MattHoneycutt/Should/blob/master/license.txt</PackageLicenseUrl>
     <Description>
       Should and Should.Fluent now with .NET Standard support!
@@ -15,16 +18,6 @@
     </PackageReleaseNotes>
     <Copyright>Copyright 2018,2024</Copyright>
     <PackageTags>TDD;Testing;BDD;Test Driven Development;NET Core;Should;Should.Fluent</PackageTags>
-  </PropertyGroup>
-  
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);IncludeP2PAssets</TargetsForTfmSpecificBuildOutput>
-    <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <PackageProjectUrl>https://github.com/CompuMasterGmbH/CompuMaster.Test.Should</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -40,6 +33,17 @@
     <Compile Remove="Model\ShouldDateTime.cs" />
     <Compile Remove="Model\ShouldDouble.cs" />
     <Compile Remove="Model\ShouldString.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\license.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
   
 </Project>
