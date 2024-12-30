@@ -6,7 +6,7 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageProjectUrl>https://github.com/CompuMasterGmbH/CompuMaster.Test.Should</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>2.0.0-rc</Version>
+    <Version>2.0.0</Version>
     <Authors>Eric Hexter, Tim Scott, Matt Honeycutt, Jochen Wezel</Authors>
     <Description>
       Should and Should.Fluent now with .NET Standard support and in a combined assembly!
